@@ -46,27 +46,26 @@ body {
     z-index: -1;
 }
 
-@media screen and (max-width: 1024px) {
-    .menu {
-        padding: 80px 20px;
-    }
-
-    .btn-menu {
-        padding: 40px;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .menu {
-        padding: 50px 15px;
+        padding: 40px 15px;
+        padding-left: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .titulo img {
+        max-width: 85%;
+        height: auto;
     }
 
     .btn-menu {
-        padding: 15px 0;
+        padding: 30px 0;
+        padding-right: 0;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -74,7 +73,7 @@ body {
 
     .btn-style {
         width: 80%;
-        max-width: 280px;
+        max-width: 260px;
         height: auto;
         font-size: 1.5rem;
         padding: 12px 20px;
@@ -82,6 +81,10 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    .titulo img {
+        max-width: 95%;
+    }
+
     .btn-style {
         width: 90%;
         font-size: 1.25rem;
